@@ -7,6 +7,7 @@ import userRouter from "./routes/userRoutes.js";
 import projectRouter from "./routes/projectRoutes.js";
 
 export const app = express();
+export default app;
 
 const port = process.env.PORT || 3000;
 
