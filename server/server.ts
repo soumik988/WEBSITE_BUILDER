@@ -12,8 +12,10 @@ export default app;
 const port = process.env.PORT || 3000;
 
 const corsOptions = {
-  origin:
-    process.env.TRUSTED_ORIGINS?.split(",") || ["http://localhost:5173"],
+  origin: [
+    "http://localhost:5173",
+    "https://website-builder-eee5.vercel.app",
+  ],
   credentials: true,
 };
 
